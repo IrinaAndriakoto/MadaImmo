@@ -1,0 +1,32 @@
+2024-07-04 19:05:36,165 INFO:D�but du processus ETL
+2024-07-04 19:05:36,283 INFO:Extraction des donn�es termin�e
+2024-07-04 19:05:36,283 INFO:Extraction termin�e.
+2024-07-04 19:05:36,283 INFO:D�but de la transformation des donn�es
+2024-07-04 19:05:36,283 INFO:Transformation des donn�es termin�e
+2024-07-04 19:05:36,283 INFO:Transformation termin�e.
+2024-07-04 19:05:36,283 INFO:D�but du chargement des donn�es
+2024-07-04 19:05:36,396 ERROR:Erreur dans le processus ETL: (psycopg2.errors.DependentObjectsStillExist) cannot drop table dw_profils because other objects depend on it
+DETAIL:  constraint dw_biens_idproprio_fkey on table dw_biens depends on table dw_profils
+constraint dw_location_idclient_fkey on table dw_location depends on table dw_profils
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE dw_profils]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+2024-07-04 19:27:03,215 INFO:D�but du processus ETL
+2024-07-04 19:27:03,319 INFO:Extraction des donn�es termin�e
+2024-07-04 19:27:03,319 INFO:Extraction termin�e.
+2024-07-04 19:27:03,319 INFO:D�but de la transformation des donn�es
+2024-07-04 19:27:03,319 INFO:Transformation des donn�es termin�e
+2024-07-04 19:27:03,319 INFO:Transformation termin�e.
+2024-07-04 19:27:03,319 INFO:D�but du chargement des donn�es
+2024-07-04 19:27:03,460 ERROR:Erreur dans le processus ETL: (psycopg2.errors.DependentObjectsStillExist) cannot drop table dw_profils because other objects depend on it
+DETAIL:  constraint dw_biens_idproprio_fkey on table dw_biens depends on table dw_profils
+constraint dw_location_idclient_fkey on table dw_location depends on table dw_profils
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+
+[SQL: 
+DROP TABLE dw_profils]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+

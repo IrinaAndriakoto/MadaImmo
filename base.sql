@@ -93,6 +93,14 @@ FOR EACH ROW
 --     left join typebien ty on ty.id=b.idtype 
 --     left join location lo on lo.idbien=b.id;
 
+CREATE INDEX idx_location_details_datedebut ON location_details (datedebut);
+
+-- Index sur `datefin`
+CREATE INDEX idx_location_details_datefin ON location_details (datefin);
+
+-- Index combiné sur `datedebut` et `datefin`
+CREATE INDEX idx_location_details_datedebut_datefin ON location_details (datedebut, datefin);
+
 create view v_biens as 
      SELECT b.id AS idbien,
     ty.id AS idtype,
