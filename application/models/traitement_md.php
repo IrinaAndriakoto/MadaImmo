@@ -384,4 +384,9 @@ public function populate_location_details()
         
         return $query->result();
     }
+
+    public function getTest(){
+        $query= $this->db->get('test');
+        return $query->result();
+    }
 }

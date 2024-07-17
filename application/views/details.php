@@ -1,4 +1,10 @@
-
+<?php
+    // var_dump($test);
+    // foreach($test as $t):
+    //     echo $t->inf;
+    //     echo $t->sup;
+    // endforeach;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +57,13 @@
                 <td><?php echo $d->duree; ?></td>
                 <td><?php echo $d->datedebut->format('Y-m-d'); ?></td>
                 <td><?php echo $d->datefin ?></td>
-                <td><?php echo $d->loyerparmois; ?></td>
+                <?php foreach($test as $t): ?>
+                <td
+                    <?php if($d->loyerparmois > $t->inf && $d->loyerparmois < $t->sup) { ?>
+                        style="background-color:yellow;"
+                    <?php } ?> 
+                ><?php echo $d->loyerparmois; ?></td>
+                <?php endforeach; ?>
                 <td><?php echo $d->commission; ?> %</td>
                 <td><?php echo $d->gain_admin; ?></td>
                 <td><?php echo $d->gain_proprio; ?></td>

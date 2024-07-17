@@ -165,6 +165,13 @@ class Traitement extends CI_Controller {
         $duree = $this->input->post('duree');
 
         $data['details'] = $this->traitement_md->getDetailsLocations($id,$duree);
+        $data['test'] = $this->traitement_md->getTest();
+        
         $this->load->view('details',$data);
     }
+
+    // public function Test(){
+    //     $data['test'] = $this->traitement_md->getTest();
+    //     $this-
+    // }
 }
