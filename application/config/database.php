@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'postgres.railway.internal',
 	'username' => 'postgres',
-	'password' => 'irina',
-	'database' => 'madaimmo',
+	'password' => 'yXTfydSRkqzYtExskqqfIatLrAbSEKjz',
+	'database' => 'railway',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
