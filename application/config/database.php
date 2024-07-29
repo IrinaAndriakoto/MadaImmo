@@ -74,7 +74,7 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
+	'dsn'	=> 'postgresql://postgres:yXTfydSRkqzYtExskqqfIatLrAbSEKjz@viaduct.proxy.rlwy.net:39345/railway',
 	'hostname' => 'postgres.railway.internal',
 	'username' => 'postgres',
 	'password' => 'yXTfydSRkqzYtExskqqfIatLrAbSEKjz',
